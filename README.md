@@ -1,1 +1,5 @@
-# minecraftrealmsandservers
+# Minecraft Realms & Servers Website
+
+This is the code for my Minecraft Realms & Servers website. IT IS PROHIBITED FOR USE OF ANY OF IT AND YOU MAY BE SUBJECT TO COPYRIGHT VIOLATION IF YOU USE IT WITHOUT PERMISSION FROM ORTIZ DESIGN & DEVELOPMENT
+
+**TO REQUEST PERMISSION TO USE THIS SOURCE CODE PLEASE EMAIL ME AT "ortizdesignanddevelopment@gmail.com"**
