@@ -1,16 +1,14 @@
-<!-- Designed and Developed by Jacob Ortiz | Ortiz Design & Development -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Realms & Servers</title>
+    <title>MR&S | Contact Us</title>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles/global_styles.css">
     <link rel="stylesheet" href="styles/nav_styles.css">
-    <link rel="stylesheet" href="styles/home_styles.css">
-    <link rel="stylesheet" href="styles/news_styles.css">
+    <link rel="stylesheet" href="styles/contact_styles.css">
     <link rel="stylesheet" href="styles/footer_styles.css">
 </head>
 
@@ -40,15 +38,70 @@
                 <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
             </nav>
         </div>
-        <div class="home">
-            <!-- home hero -->
-            <div class="center slider">
-                <img src="images/logo.png">
-                <h2>“Find the perfect community for you.”</h2>
+        <!-- contact -->
+        <section class="contact">
+            <!-- contact -->
+              <h2 class="contact-header">Contact Us</h2>
+            <div class="container">
+              <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i style="color: #3c7cb9;" class="fa-brands fa-facebook-f"></i></div>
+                    <div class="text">
+                      <h3>Facebook</h3>
+                      <p><a href="https://facebook.com/groups/minecraftrealmsandservers">Join the Group!</a></p>
+                    </div>
+                  </div>
+                <div class="box">
+                    <div class="icon"><i style="color: #3c7cb9;" class="fa-brands fa-discord"></i></div>
+                    <div class="text">
+                      <h3>Discord</h3>
+                      <p><a href="https://discord.gg/CspBTHHsny">Join the Server!</a></p>
+                    </div>
+                  </div>
+                <div class="box">
+                  <div class="icon"><i style="color: #3c7cb9;" class="fa-solid fa-phone"></i></div>
+                  <div class="text">
+                    <h3>Phone</h3>
+                    <p><a href="tel:314-330-9388">(314) 330-9388</a></p>
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i style="color: #3c7cb9;" class="fa-regular fa-envelope"></i></div>
+                    <div class="text">
+                      <h3>Email</h3>
+                      <p><a href="mailto:minecraftrealmsandservers@gmail.com">minecraftrealmsandservers@gmail.com</a></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="contactForm">
+                <form action="app/contactform.php" method="post">
+                  <h2>Send Message</h2>
+                  <div class="inputBox">
+                    <input id="name" type="text" name="name" required>
+                    <span>Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <input id="email" type="text" name="email" required>
+                    <span>Email</span>
+                  </div>
+                  <div class="inputBox">
+                    <input id="subject" type="text" name="subject" required>
+                    <span>Subject</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea id="message" name="message" required></textarea>
+                    <span>Type your Message...</span>
+                  </div>
+                  <div class="inputBox">
+                    <button type="submit" name="submit">Send</button>
+                  </div>
+                </form>
+              </div>
             </div>
-        </div>
+          </section>
+        
         <!-- footer -->
-        <div class="footer-container">
+        <div class="footer-container" style="margin-top: 0;">
             <div class="footer">
                 <div class="big-footer">
                     <div class="logo">
@@ -78,8 +131,9 @@
                             <p>Follow us on social media to find out the latest updates on our progress.</p>
                             <div class="social-links-a">
                                 <a href="https://facebook.com/groups/minecraftrealmsandservers"><i
-                                        class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://discord.gg/CspBTHHsny"><i class="fa-brands fa-discord"></i></a>
+                                    class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://discord.gg/CspBTHHsny"><i
+                                        class="fa-brands fa-discord"></i></a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +149,6 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
         <script src="app/main.js"></script>
-        <script src="app/createNewsPosts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </body>
 
