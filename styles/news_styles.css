@@ -1,0 +1,130 @@
+.news {
+    width: 100%;
+    min-height: 0;
+    padding-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.news-content {
+    width: 90%;
+    min-height: 100vh;
+    padding: 0;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid white;
+    position: relative;
+    margin: 0 auto;
+}
+
+.news-header {
+    font-size: 2.5rem;
+    color: white;
+    margin: 25px;
+    position: relative;
+}
+
+.news-header::before {
+    width: 15px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    top: calc(50% - 5px);
+    left: -35px;
+}
+
+.news-header::after {
+    width: 15px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    top: calc(50% - 5px);
+    right: -35px;
+}
+
+.posts {
+    max-width: 1200px;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.post-container {
+    width: 320px;
+    height: 500px;
+    margin: 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 15px 8px rgba(0, 0, 0, .3);
+}
+
+.post {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    transition: all .3s ease;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.post-txt {
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: .3s;
+    padding-bottom: 15px;
+}
+
+.post-txt span {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: calc(100% - 25px);
+    height: 40px;
+    color: grey;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    transition: .3s;
+}
+
+@media screen and (max-width: 1300px){
+    .posts {
+        max-width: 800px;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .posts {
+        max-width: 600px;
+        margin: 0;
+        padding: 0;
+    }
+    .post-container {
+        margin: 0;
+        margin-bottom: 45px;
+    }
+  }

@@ -1,0 +1,58 @@
+:root {
+	--primary: #255291;
+	--secondary: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.4;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	overflow-x: hidden;
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	overflow-x: hidden;
+	background-color: #333;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2c2f33;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #171515;
+	border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #171515;
+}
